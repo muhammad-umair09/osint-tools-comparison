@@ -165,34 +165,14 @@ python -m unittest discover -s app -p "*engine*.py"
 
 ---
 
-## 📋 Troubleshooting
 
-### Issue: Streamlit Command Not Found
-
-* **Cause:** The installation occurred outside of the active virtual environment sandbox.
-* **Solution:** Re-run `source venv/bin/activate` or `venv\Scripts\activate` and confirm that `(venv)` is appended to your command-line prompt before running the setup commands.
-
-### Issue: Excel Generation Failure
-
-* **Cause:** `openpyxl` engine missing or corrupted.
-* **Solution:** Re-execute `pip install openpyxl==3.1.2` within your active terminal sandbox.
-
----
 
 ## ⚡ Performance Optimization
 
 * **Vectorized Computations:** All score calculation logic maps through vector matrices inside Pandas dataframes rather than standard sequential Python loops, allowing real-time calculations.
 * **Memory Optimization:** Aggressive list flattening ensures that dashboard refreshes load under 150ms.
 
----
 
-## 🗺️ Future Enhancements / Roadmap
-
-* [ ] **Live API Validation Harness:** Background microservices to live-test status responses of integrated platform components.
-* [ ] **Interactive Visual Network Graphs:** Integrating Graphistry or Pyvis components directly inside the inspection tab to render mock target relationships.
-* [ ] **STIX/TAXII 2.1 Exporting Capabilities:** Providing standardized formatting structure schemas directly to upstream TIP networks.
-
----
 
 ## 🤝 Contributing
 
@@ -218,14 +198,4 @@ Contributions to improve our metric datasets or add support for new platform too
 * **Main Branch Stability:** The `main` branch remains protected at all times. Direct pushes are barred.
 * **Branch Naming Standard:** Use prefixes such as `feature/`, `bugfix/`, or `docs/` followed by descriptive hyphenated nouns.
 
----
-
-## 📄 License
-
-Distributed under the terms of the **MIT License**. For complete details and permissions, please review the file contents in the root directory.
-
---
-
-## 💬 Support
-
-For application assistance, user testing errors, or schema validation problems, please open an Issue directly inside the GitHub platform interface tracker.
+ 
